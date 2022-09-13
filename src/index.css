@@ -1,0 +1,14 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri, sans-serif;
+}
+
+:root {
+  --primary: #1E78FF;
+  --background: #161718;
+  --background-accent: #1E1F22;
+  --text: #FFFFFF;
+  --subtext: #888888;
+}
