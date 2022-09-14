@@ -1,22 +1,20 @@
-import styles from './login.module.css';
-
 export default `
-  <section class=${styles.page}>
-    <form class=${styles.loginForm}>
-      <h2 class=${styles.title}>Вход</h2>
-      <fieldset class=${styles.fieldset}>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Логин:</span>
-          <input class=${styles.input} type="text" placeholder="login"/>
+  <section class="login">
+    <form class="login__form">
+      <h2 class="login__title">Вход</h2>
+      <fieldset class="login__fieldset">
+        <label class="login__label">
+          <span class="login__text">Логин:</span>
+          <input class="login__input" type="text" placeholder="login"/>
         </label>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Пароль:</span>
-          <input class=${styles.input} type="password" placeholder="12345678"/>
+        <label class="login__label">
+          <span class="login__text">Пароль:</span>
+          <input class="login__input" type="password" placeholder="12345678"/>
         </label>
       </fieldset>
-      <div class=${styles.buttons}>
-        <button class=${styles.submitButton}>Войти</button>
-        <a href="#" class=${styles.link}>Зарегистрироваться</a>
+      <div class="login__buttons">
+        <button class="login__submit-button">Войти</button>
+        <a href="#" class="login__link">Зарегистрироваться</a>
       </div>
     </form>
   </section>

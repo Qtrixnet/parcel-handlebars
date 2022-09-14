@@ -1,42 +1,42 @@
-import styles from './register.module.css';
-
 export default `
-  <section class=${styles.page}>
-    <form class=${styles.loginForm}>
-      <h2 class=${styles.title}>Регистрация</h2>
-      <fieldset class=${styles.fieldset}>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Почта:</span>
-          <input class=${styles.input} type="text" placeholder="pochta@yandex.ru"/>
+  <section class="register">
+    <form class="register__form">
+      <h2 class="register__title">Регистрация аккаунта</h2>
+      <fieldset class="register__fieldset">
+        <label class="register__label">
+          <span class="register__text">Логин:</span>
+          <input class="register__input" type="text" placeholder="ivanivanov"/>
         </label>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Логин:</span>
-          <input class=${styles.input} type="text" placeholder="ivanivanov"/>
+        <label class="register__label">
+          <span class="register__text">Электронный адрес:</span>
+          <input class="register__input" type="text" placeholder="example@gmail.com"/>
         </label>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Имя:</span>
-          <input class=${styles.input} type="text" placeholder="Иван"/>
+        <label class="register__label">
+          <span class="register__text">Имя:</span>
+          <input class="register__input" type="text" placeholder="Иван"/>
         </label>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Фамилия:</span>
-          <input class=${styles.input} type="text" placeholder="Иванов"/>
+        <label class="register__label">
+          <span class="register__text">Номер телефона:</span>
+          <input class="register__input" type="text" placeholder="+7 (909) 967 30 30"/>
         </label>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Телефон:</span>
-          <input class=${styles.input} type="text" placeholder="+7 (909) 967 30 30"/>
+        <label class="register__label">
+          <span class="register__text">Фамилия:</span>
+          <input class="register__input" type="text" placeholder="Иванов"/>
         </label>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Пароль:</span>
-          <input class=${styles.input} type="password" placeholder="1234567"/>
-        </label>
-        <label class=${styles.label}>
-          <span class=${styles.text}>Пароль (еще раз):</span>
-          <input class=${styles.input} type="password" placeholder="1234567"/>
-        </label>
+        <fieldset class="register__container">
+          <label class="register__label">
+            <span class="register__text">Пароль:</span>
+            <input class="register__input" type="password" placeholder="1234567"/>
+          </label>
+          <label class="register__label">
+            <span class="register__text">Повторите пароль:</span>
+            <input class="register__input" type="password" placeholder="1234567"/>
+          </label>
+        </fieldset>
       </fieldset>
-      <div class=${styles.buttons}>
-        <button class=${styles.submitButton}>Зарегистрироваться</button>
-        <a href="#" class=${styles.link}>Войти</a>
+      <div class="register__buttons">
+        <button class="register__submit-button">Зарегистрироваться</button>
+        <a href="#" class="register__link">Вернуться назад</a>
       </div>
     </form>
   </section>

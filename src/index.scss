@@ -1,0 +1,11 @@
+@import './markup/pages/login/login';
+@import './markup/pages/register/register';
+@import './markup/pages/error/error';
+@import 'markup/pages/chats/chats';
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri, sans-serif;
+}
