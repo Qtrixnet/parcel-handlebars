@@ -1,35 +1,19 @@
+
+
 export default `
     <section class="chats">
-        <header class="chats-header">
-            <img class="chats-header__avatar"/>
-            <nav class="chats-header__nav">
-                <ul class="chats-header__list">
-                    <li class="chats-header__list-item">
-                        <button class="chats-header__button chats-header__button_chats"/>
-                    </li>
-                    <li class="chats-header__list-item">
-                        <button class="chats-header__button chats-header__button_profile"/>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            {{> toolbar}}
         <main class="chats-container">
             <section class="chats-list">
-                <div>
-                    <input class="chats-list__search" type="text" placeholder="Поиск по сообщениям..." />
+                <div class="chats-list__search-container">
+                  <div class="chats-list__search-line">
+                      <input class="chats-list__search" type="text" placeholder="Поиск по сообщениям..." />
+                  </div>
                 </div>
                 <ul class="chats-list__list">
-                    <li class="chats-list__list-item">
-                        <img class="chats-list__avatar" src="" alt="">
-                        <div class="chats-list__container">
-                            <h2 class="chats-list__title">Иван Иванов</h2>
-                            <p class="chats-list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="chats-list__container">
-                            <span class="chats-list__time">1:38</span>
-                            <div class="chats-list__notify">8</div>
-                        </div>
-                    </li>
+                    {{#each chatCards}}
+                        {{> chat-card this}}
+                    {{/each}}
                 </ul>
             </section>
             <section class="chat">
@@ -42,7 +26,23 @@ export default `
                     <button class="chat__options"></button>
                 </header>
                 <div class="chat__messages">
-                
+                    <ul class="chat__messages-list">
+                        <li class="chat__messages-list-item">
+                            <p class="chat__messages-list-text">Друзья, у меня для вас особенный выпуск новостей!</p>
+                        </li>
+                        <li class="chat__messages-list-item">
+                            <p class="chat__messages-list-text">У меня для вас особенный выпуск новостей!</p>
+                        </li>
+                        <li class="chat__messages-list-item">
+                            <img class="chat__messages-list-image" src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg" alt="">
+                        </li>
+                        <li class="chat__messages-list-item chat__messages-list-item_self">
+                            <p class="chat__messages-list-text chat__messages-list-text_self">Pellentesque habitant morbi tristique!</p>
+                        </li>
+                        <li class="chat__messages-list-item chat__messages-list-item_self">
+                            <p class="chat__messages-list-text chat__messages-list-text_self">Duis ac diam nec massa aliquam consequat. Curabitur ante neque</p>
+                        </li>
+                    </ul>
                 </div>
                 <footer class="chat__footer">
                     <div class="chat__footer-container">
